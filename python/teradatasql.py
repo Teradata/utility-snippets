@@ -25,7 +25,7 @@ with con.cursor() as cur:
     except Exception as error:
         print('Failed creating table with error: ', error.args[0].split('\n')[0])
 
-# Insert data from a list to a table  and read 
+# Insert data from a list to a table and read it back into a list
 with con.cursor() as cur:
     try:
         cur.execute ("delete from myTable")    
